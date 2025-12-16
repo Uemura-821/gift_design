@@ -66,10 +66,26 @@ h2 {
     margin: 0 auto;
 }
 
+.about-wrap {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.photo {
+    box-sizing: border-box;
+    width: 470px;
+    margin: 0 auto;
+    padding: 75px 70px;
+    border: solid 1px #9b0015;
+    border-radius: 118px;
+}
+
 .photo img {
     display: block;
+    width: 100%;
     margin: 0 auto;
-
+    border-radius: 58px;
 }
 
 .uemura {
