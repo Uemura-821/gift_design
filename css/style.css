@@ -54,6 +54,7 @@ body {
 }
 
 h2 {
+    text-align: center;
     font-size: 73px;
     line-height: 1.8;
     color: #9b0015;
@@ -61,7 +62,14 @@ h2 {
 
 .ABOUT {
     padding-top: 120px;
+    padding-bottom: 105px;
     margin: 0 auto;
+}
+
+.photo img {
+    display: block;
+    margin: 0 auto;
+
 }
 
 .uemura {
