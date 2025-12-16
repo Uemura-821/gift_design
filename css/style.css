@@ -35,3 +35,31 @@ body {
     top: 570px;
     left: 180px;
 }
+
+.main {
+    font-size: 52px;
+    line-height: 1.6;
+    color: #9b0015;
+
+}
+
+.sub {
+    font-size: 23px;
+    line-height: 1.7;
+    color: #9b0015;
+}
+
+#ABOUT {
+    background: #d6cfc4;
+}
+
+h2 {
+    font-size: 73px;
+    line-height: 1.8;
+    color: #9b0015;
+}
+
+.ABOUT {
+    padding-top: 120px;
+    margin: 0 auto;
+}
