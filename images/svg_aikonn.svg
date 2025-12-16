@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.3 40.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #9b0015;
+        stroke-miterlimit: 10;
+        stroke-width: 1.2px;
+      }
+
+      .cls-2 {
+        fill: #9b0015;
+        font-family: BookAntiqua, 'Book Antiqua';
+        font-size: 28px;
+      }
+    </style>
+  </defs>
+  <g id="_ポートフォリオ" data-name="ポートフォリオ">
+    <g>
+      <text class="cls-2" transform="translate(51.72 32.17)"><tspan x="0" y="0">gift design</tspan></text>
+      <g>
+        <polygon class="cls-1" points="19.93 16.79 5 7.1 11.76 .97 19.93 16.79"/>
+        <polygon class="cls-1" points="14.8 17.13 22.29 .97 29.31 6.8 14.8 17.13"/>
+        <rect class="cls-1" x="4.53" y="21.11" width="26.24" height="17.39"/>
+        <rect class="cls-1" x=".6" y="11.87" width="34.1" height="8.21"/>
+      </g>
+    </g>
+  </g>
+</svg>

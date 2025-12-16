@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+body {
+    background: #fff6e8;
+}
+
+.icon {
+    width: 13%;
+    margin-top: 48px;
+    margin-left: 55px;
+}
+
+.menu {
+    margin-top: 100px;
+    margin-left: 75px;
+    font-size: 27px;
+    color: #9b0015;
+}
+
+.ribbon {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+}
+
+.ribbon img {
+    display: block;
+    width: 100%;
+}
+
+.gift {
+    width: 53%;
+    position: absolute;
+    top: 570px;
+    left: 180px;
+}
