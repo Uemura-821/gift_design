@@ -4,9 +4,24 @@ body {
     background: #fff6e8;
 }
 
+.ribbon {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+.ribbon img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    padding-top: 48px;
+}
+
 .icon {
     width: 13%;
-    margin-top: 48px;
     margin-left: 55px;
 }
 
@@ -17,36 +32,33 @@ body {
     color: #9b0015;
 }
 
-.ribbon {
-    position: absolute;
-    top: 58px;
-    left: 0;
-    right: 0;
-}
-
-.ribbon img {
-    display: block;
-    width: 100%;
-}
 
 .gift {
     width: 53%;
-    position: absolute;
-    top: 570px;
-    left: 180px;
+    margin-top: 180px;
+    margin-left: 183px;
+
+}
+
+.top {
+    width: 49%;
+    margin-left: auto;
+    padding-bottom: 130px;
 }
 
 .main {
     font-size: 52px;
     line-height: 1.6;
     color: #9b0015;
-
 }
 
 .sub {
     font-size: 23px;
     line-height: 1.7;
     color: #9b0015;
+    width: 70%;
+    margin-left: auto;
+    padding-top: 90px;
 }
 
 #ABOUT {
@@ -67,15 +79,20 @@ h2 {
 }
 
 .about-wrap {
-    display: flex;
-    align-items: center;
-    gap: 80px;
+    width: 470px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.about1 {
+    position: absolute;
+    right: 121%;
 }
 
 .photo {
     box-sizing: border-box;
-    width: 470px;
-    margin: 0 auto;
+
     padding: 75px 70px;
     border: solid 1px #9b0015;
     border-radius: 118px;
@@ -111,5 +128,23 @@ h2 {
     font-size: 18px;
     line-height: 1.8;
     color: #9b0015;
+    position: absolute;
+    bottom: 0;
+    left: 140%;
+    width: 243px;
 
+}
+
+.WORK {
+    padding-top: 125px;
+    padding-bottom: 105px;
+}
+
+.work-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.work-wrap img {
+    width: 28%;
 }
