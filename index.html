@@ -5,30 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIFT DESIGN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <div class="ribbon">
         <img src="images/svg_ribonn.svg" alt="リボン">
     </div>
-    <header>
+
+    <div class="sidebar">
+
         <div class="icon">
             <img src="images/svg_aikonn.svg" alt="アイコン">
         </div>
-        <div class="menu">
-            <p>home</p>
-            <p>about</p>
-            <p>work</p>
-            <p>contact</p>
-        </div>
+        <nav class="side-menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="works.html">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <div class="gift">
-            <img src="images/svg_GIFTDESISN.svg" alt="GIFT DESIGN">
-        </div>
 
-    </header>
+    <div class="gift">
+        <img src="images/svg_GIFTDESISN.svg" alt="GIFT DESIGN">
+    </div>
+
+
     <main>
         <div class="top">
             <p class="main">Evry design is a little gift.
@@ -44,66 +52,127 @@
                 お客様と一緒に作りたいです。
             </p>
         </div>
-
-        <section id="ABOUT">
-            <h2 class="ABOUT">ABOUT</h2>
-            <div class="about-wrap">
-                <div class="about1">
-                    <p class="uemura">uemura <br>
-                        tsugumi</p>
-                    <p class="name">上村亜美</p>
-                    <p class="birthday">....20001.08.21</p>
-                    <p class="kyoto">....kyoto</p>
-                </div>
-
-                <div class="photo">
-                    <img src="images/1xjpg about.jpg" alt="私の写真">
-                </div>
-
-                <p class="syoukai">京都生まれ京都育ちです。
-                    好きな食べ物は<br>
-                    苺で期間限定の苺には<br>
-                    目がありません。<br>
-                    色も赤が好きです。<br>
-                    可愛いものが大好きでいろいろ<br>
-                    ほしくなるのですが<br>
-                    物が増えすぎると大変なので<br>
-                    頑張って我慢しています。</p>
-            </div>
-
-            <p>veiw moer</p>
-        </section>
-
-        <section id="WORK">
-
-            <h2 class="WORK">WORK</h2>
-
-            <div class="work-wrap">
-                <img src="images/1xjpg_1.jpg index.html" alt="美容室">
-                <img src="images/1xjpg_2.jpg" alt="WORKERS">
-                <img src="images/1xjpg_3.jpg" alt="CAFE">
-                <img src="images/1xjpg_1xjpg_4.jpg" alt="アイスクリーム">
-                <img src="images/1xjpg_5.jpg" alt="ハンバーガー">
-                <img src="images/1xjpg_6.jpg" alt="スマホ">
-            </div>
-            <p>veiw moer</p>
-        </section>
-
-        <section id="contact">
-
-            <h2>contact</h2>
-
-            <p>-お問い合わせ-</p>
-            <div class="form">
-                <p>お名前</p>
-                <p>フリガナ</p>
-                <p>メールアドレス</p>
-                <p>お電話番号</p>
-                <p>お問い合わせ内容</p>
-            </div>
-        </section>
     </main>
+    <section id="ABOUT">
+        <h2 class="ABOUT">ABOUT</h2>
+        <div class="about-wrap">
+            <div class="about1">
+                <p class="uemura">uemura <br>
+                    tsugumi</p>
+                <p class="name">上村亜美</p>
+                <p class="birthday">....20001.08.21</p>
+                <p class="kyoto">....kyoto</p>
+            </div>
 
+            <div class="photo">
+                <img src="images/1xjpg_about.jpg" alt="私の写真">
+            </div>
+
+            <p class="syoukai">京都生まれ京都育ちです。
+                好きな食べ物は<br>
+                苺で期間限定の苺には<br>
+                目がありません。<br>
+                色も赤が好きです。<br>
+                可愛いものが大好きでいろいろ<br>
+                ほしくなるのですが<br>
+                物が増えすぎると大変なので<br>
+                頑張って我慢しています。</p>
+        </div>
+        <div class="view-btn">
+            <a href="about.html" class="view-more">veiw moer</a>
+        </div>
+    </section>
+
+    <section id="WORK">
+
+        <h2 class="WORK">WORK</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1xjpg_1.jpg" alt="美容室"></div>
+                <div class="swiper-slide"><img src="images/1xjpg_2.jpg" alt="WORKERS"> </div>
+                <div class="swiper-slide"><img src="images/1xjpg_3.jpg" alt="CAFE"></div>
+                <div class="swiper-slide"><img src="images/1xjpg_1xjpg_4.jpg" alt="アイスクリーム"></div>
+                <div class="swiper-slide"><img src="images/1xjpg_5.jpg" alt="ハンバーガー"></div>
+                <div class="swiper-slide"><img src="images/1xjpg_6.jpg" alt="スマホ"></div>
+            </div>
+
+            <div class="work-nav">
+                <button class="nav-btn prev">
+                    <span class="triangle left"></span>
+                </button>
+
+                <button class="nav-btn next">
+                    <span class="triangle right"></span>
+                </button>
+
+            </div>
+        </div>
+        <div class="view-btn2">
+            <a href="works.html" class="view-more">veiw moer</a>
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <h2>contact</h2>
+        <p class="contact-sub">-お問い合わせ-</p>
+
+        <form class="contact-form">
+            <div class="form-row">
+                <label>お名前</label>
+                <input type="text" placeholder="入力してください">
+            </div>
+
+            <div class="form-row">
+                <label>フリガナ</label>
+                <input type="text" placeholder="カタカナで入力してください">
+            </div>
+
+            <div class="form-row">
+                <label>メールアドレス</label>
+                <input type="email" placeholder="入力してください">
+            </div>
+
+            <div class="form-row">
+                <label>お電話番号</label>
+                <input type="tel" placeholder="入力してください">
+            </div>
+
+            <div class="form-row textarea">
+                <label>お問い合わせ内容</label>
+                <textarea></textarea>
+            </div>
+        </form>
+
+
+    </section>
+    <footer class="footer">
+        <p>©2025 portfolio tsugumi uemura</p>
+    </footer>
+
+
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 78,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            navigation: {
+                nextEl: ".work-nav .next",
+                prevEl: ".work-nav .prev",
+            }
+
+        });
+
+
+    </script>
 </body>
 
 </html>
