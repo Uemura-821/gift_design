@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -101,7 +102,11 @@
                 <button class="nav-btn prev">
                     <span class="triangle left"></span>
                 </button>
-
+                <div class="work-lines">
+                    <span class="line"></span>
+                    <span class="line is-activ"></span>
+                    <span class="line"></span>
+                </div>
                 <button class="nav-btn next">
                     <span class="triangle right"></span>
                 </button>
@@ -147,7 +152,8 @@
 
 
     </section>
-    <footer class="footer">
+
+    <footer>
         <p>©2025 portfolio tsugumi uemura</p>
     </footer>
 
@@ -171,7 +177,34 @@
 
         });
 
+        const lines = document.querySelectorAll('.work-lines .line');
 
+        function setCenterLineActive() {
+            lines.forEach(l => l.classList.remove('is-active'));
+            lines[1].classList.add('is-active');
+        }
+
+        swiper.on('transitionStart', () => {
+            lines.forEach(l => l.classList.remove('is-active'));
+        });
+
+
+        swiper.on('transitionEnd', setCenterLineActive);
+
+
+        setCenterLineActive();
+
+        $(function () {
+            $(document).on("scroll", function () {
+                if ($(this).scrollTop() > 80) {
+                    $('.ribbon').css('opacity', 0.3);
+                } else {
+                    $('.ribbon').css('opacity', 1);
+                }
+
+            })
+        });
+        // scroitop*スクロール量求められる。
     </script>
 </body>
 
