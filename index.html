@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIFT DESIGN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -90,7 +93,7 @@
 
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/1xjpg_1.jpg" alt="美容室"></div>
+                <div class="swiper-slide"><a href="biyousitu.html"><img src="images/1xjpg_1.jpg" alt="美容室"></a></div>
                 <div class="swiper-slide"><img src="images/1xjpg_2.jpg" alt="WORKERS"> </div>
                 <div class="swiper-slide"><img src="images/1xjpg_3.jpg" alt="CAFE"></div>
                 <div class="swiper-slide"><img src="images/1xjpg_1xjpg_4.jpg" alt="アイスクリーム"></div>
@@ -113,7 +116,7 @@
 
             </div>
         </div>
-        <div class="view-btn2">
+        <div class="view-btn">
             <a href="works.html" class="view-more">veiw moer</a>
         </div>
     </section>
@@ -123,33 +126,38 @@
         <h2>contact</h2>
         <p class="contact-sub">-お問い合わせ-</p>
 
-        <form class="contact-form">
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfJUpYGfK80852npACghhyT7o7NUpbHmPFMGL-oPpwpc9xlKA/formResponse?pli=1"
+            method="POST" class="contact-form">
             <div class="form-row">
                 <label>お名前</label>
-                <input type="text" placeholder="入力してください">
+                <input name="entry.1633920210" type="text" placeholder="入力してください">
             </div>
 
             <div class="form-row">
                 <label>フリガナ</label>
-                <input type="text" placeholder="カタカナで入力してください">
+                <input name="entry.227649005" type="text" placeholder="カタカナで入力してください">
             </div>
 
             <div class="form-row">
                 <label>メールアドレス</label>
-                <input type="email" placeholder="入力してください">
+                <input name="entry.790080973" type="email" placeholder="入力してください">
             </div>
 
             <div class="form-row">
                 <label>お電話番号</label>
-                <input type="tel" placeholder="入力してください">
+                <input name="entry.1770822543" type="tel" placeholder="入力してください">
             </div>
 
             <div class="form-row textarea">
                 <label>お問い合わせ内容</label>
-                <textarea></textarea>
+                <textarea name="entry.1846923513" placeholder="入力してください"></textarea>
+            </div>
+
+            <div class="view-btn3">
+                <a href="thanks.html" class="view-more sousin">送信</a>
             </div>
         </form>
-
 
     </section>
 
@@ -158,6 +166,11 @@
     </footer>
 
 
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='thanks.html';}"></iframe>
 
     <script>
         const swiper = new Swiper(".swiper", {

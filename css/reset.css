@@ -19,12 +19,12 @@ li {
     padding: 0;
     line-height: 1;
 
-    font-family: "游明朝", YuMincho,
-        "Hiragino Mincho ProN W3",
-        "ヒラギノ明朝 ProN W3",
+    font-family: "Book Antiqua",
+        "Zen Old Mincho",
         "Hiragino Mincho ProN",
-        "HG明朝E", "ＭＳ Ｐ明朝",
-        "ＭＳ 明朝", serif;
+        "Yu Mincho",
+        "MS PMincho",
+        serif;
     font-feature-settings: "palt";
 }
 
