@@ -25,6 +25,8 @@
         <div class="icon">
             <img src="images/svg_aikonn.svg" alt="アイコン">
         </div>
+
+
         <nav class="side-menu">
             <ul>
                 <li><a href="index.html">home</a></li>
@@ -33,7 +35,21 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
+
+        <div class="sp-btn">
+            <span></span>
+        </div>
+
+        <nav class="sp-menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="works.html">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
     </div>
+
 
 
     <div class="gift">
@@ -161,6 +177,10 @@
 
     </section>
 
+    <a class="pagetop" href="#" aria-label="ページの先頭へ戻る">
+        <span class="pagetop_mark" aria-hidden="true"></span>
+        <span class="pagetop_text">PAGE TOP</span>
+    </a>
     <footer>
         <p>©2025 portfolio tsugumi uemura</p>
     </footer>
@@ -217,7 +237,16 @@
 
             })
         });
+
+        $(function () {
+            $('.sp-btn').on('click', function () {
+                $('.sp-btn').toggleClass('open');
+                $('.sp-menu').fadeToggle('open')
+            });
+        });
         // scroitop*スクロール量求められる。
+
+
     </script>
 </body>
 
