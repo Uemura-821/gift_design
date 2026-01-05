@@ -660,6 +660,13 @@ footer {
         display: none;
     }
 
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
     .sp-btn {
         position: absolute;
         top: 50px;
