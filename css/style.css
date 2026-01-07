@@ -418,7 +418,9 @@ footer {
 
 
 /* ===== ABOUT ===== */
-
+#about {
+    margin-top: 20%;
+}
 
 .section-sub {
     text-align: center;
@@ -772,7 +774,7 @@ footer {
     }
 
     .ribbon {
-        position: relative;
+        position: absolute;
         top: 50px;
         width: 100%;
     }
@@ -788,14 +790,14 @@ footer {
     .gift {
         width: 59%;
         margin-top: 50%;
-        margin-left: 0px;
+        margin-left: 80px;
     }
 
     .main {
         font-size: 33px;
         line-height: 1.5;
-        width: 49%;
-        padding-left: 30px;
+        margin-left: 10%;
+        padding-top: 70px;
     }
 
     .br-sp {
@@ -813,7 +815,7 @@ footer {
     .top {
         width: 100%;
         margin-left: 0;
-        padding-bottom: 0px;
+        padding-bottom: 60px;
     }
 
     h2 {
@@ -899,18 +901,27 @@ footer {
     }
 
     .WORK {
-        padding-top: 125px;
-        padding-bottom: 105px;
+        padding-top: 65px;
+        padding-bottom: 30px;
     }
 
-    .swiper-wrapper {
+    .swiper {
         width: 100%;
-        height: auto;
+        margin: 0 auto;
     }
 
     .swiper-slide {
-        transition: scale 0.5s;
-        scale: 0.8;
+        transition: none;
+        scale: 1;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 74%;
+        display: block;
+        margin: 0 auto;
     }
 
     .swiper-slide-active {
@@ -925,53 +936,37 @@ footer {
 
 
     .nav-btn {
-        width: 59px;
-        height: 59px;
-        border-radius: 50%;
-        border: 1px solid rgba(155, 14, 21, 0.6);
-        background: transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        z-index: 11;
     }
 
     .work-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin-top: 77px;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        margin-top: 0;
+        z-index: 10;
     }
+
 
     .work-lines {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .work-lines .line {
-        width: 70px;
-        height: 1.5px;
-        background: #949494;
-    }
-
-    .work-lines .line.is-active {
-        background: #9b0015;
-        opacity: 1;
+        display: none;
     }
 
     .triangle.left {
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-right: 12px solid #9b0015;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-right: 11px solid #9b0015;
     }
 
     .triangle.right {
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        border-left: 12px solid #9b0015;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 11px solid #9b0015;
     }
 
     .view-btn2 {
@@ -982,87 +977,45 @@ footer {
     }
 
     #contact {
-        background: #d6cfc4;
-        padding-top: 135px;
-        padding-bottom: 190px;
+        padding-top: 60px;
+        padding-bottom: 85px;
     }
 
     .contact-sub {
-        text-align: center;
-        color: #c94b4b;
-        margin-top: 8px;
-        margin-bottom: 60px;
+        margin-top: 4px;
+        margin-bottom: 30px;
+        font-size: 12px;
     }
 
     .contact-form {
-        width: 545px;
+        width: 250px;
         margin: 0 auto;
     }
 
     .form-row {
-        display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         margin-bottom: 28px;
-        gap: 40px;
+        gap: 10px;
     }
 
     .form-row label {
-        width: 160px;
-        color: #c94b4b;
-        font-size: 20px;
-        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
     }
 
     .form-row input,
     .form-row textarea {
-        flex: 2;
-        padding: 12px 16px;
-        border-radius: 10px;
-        border: 1px solid #9b0015;
-        font-size: 14px;
-        background: #fff;
+        flex: none;
+        width: 100%;
+        font-size: 12px;
     }
 
 
     .form-row textarea {
-        height: 140px;
+        height: 70px;
         resize: none;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-        color: #ddcccc;
-    }
-
-
-    .view-btn3 {
-        display: flex;
-        justify-content: center;
-        margin-top: 70px;
-    }
-
-    .view-more.sousin {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 65px 0 50px;
-        height: 66px;
-        box-sizing: border-box;
-        background: #9b0015;
-        color: #fff6e8;
-        font-size: 16px;
-        text-decoration: none;
-        border-radius: 40px;
-        box-shadow: 0px 5px 12px #949494, -6px -6px 12px #e4edf9;
-    }
-
-
-    footer {
-        background: #d6cfc4;
-        text-align: center;
-        font-size: 12px;
-        padding: 40px 0;
     }
 
     .pagetop {
@@ -1071,44 +1024,42 @@ footer {
     }
 
     /* ===== ABOUT ===== */
+    #about {
+        margin-top: 30%;
+    }
 
 
     .section-sub {
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 170px;
-        color: #666666;
+        padding-top: 5px;
+        padding-bottom: 60px;
+        font-size: 12px;
     }
 
     .about-profile {
-        display: flex;
-        justify-content: center;
-        gap: 60px;
+        flex-direction: column;
+        align-items: center;
     }
 
-
     .profile-text p {
-        font-size: 20px;
-        color: #666666;
+        font-size: 12px;
     }
 
     .profile-text1 {
-        padding-top: 58px;
-        padding-bottom: 25px
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .profile-text2 {
-        padding-bottom: 25px;
+        padding-bottom: 0;
     }
 
 
     .about-message {
-        max-width: 745px;
-        margin: 0 auto;
-        padding-top: 200px;
-        color: #666666;
-        font-size: 26px;
-        line-height: 1.7;
+        max-width: 345px;
+        padding-top: 75px;
+        font-size: 12px;
+        line-height: 1.8;
+        text-align: center;
     }
 
     /* ===== SKILL ===== */

@@ -193,22 +193,49 @@
         onload="if(submitted){window.location='thanks.html';}"></iframe>
 
     <script>
+
         const swiper = new Swiper(".swiper", {
             loop: true,
-            slidesPerView: 3,
             centeredSlides: true,
-            spaceBetween: 78,
+            speed: 800,
+
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
             },
-            speed: 800,
+
             navigation: {
                 nextEl: ".work-nav .next",
                 prevEl: ".work-nav .prev",
-            }
+            },
 
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 78,
+                },
+            },
         });
+        // const swiper = new Swiper(".swiper", {
+        //     loop: true,
+        //     slidesPerView: 3,
+        //     centeredSlides: true,
+        //     spaceBetween: 78,
+        //     autoplay: {
+        //         delay: 2500,
+        //         disableOnInteraction: false,
+        //     },
+        //     speed: 800,
+        //     navigation: {
+        //         nextEl: ".work-nav .next",
+        //         prevEl: ".work-nav .prev",
+        //     }
+
+        // });
 
         const lines = document.querySelectorAll('.work-lines .line');
 
