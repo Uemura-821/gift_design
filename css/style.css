@@ -463,6 +463,8 @@ footer {
     line-height: 1.7;
 }
 
+.footer2
+
 /* ===== SKILL ===== */
 .skill {
     padding-top: 120px;
@@ -531,7 +533,7 @@ footer {
 }
 
 .footer2 {
-    background: #fff6e8;
+    background: #e8e4dc;
 }
 
 
@@ -540,17 +542,20 @@ footer {
 
 /* ===== WORK ===== */
 
+#work {
+    margin-top: 20%;
+}
+
 .work-list {
     max-width: 720px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px 60px;
+    padding-top: 100px;
+
 }
 
-.work-item img {
-    width: 35%;
-}
 
 /* ===== thanks ===== */
 
@@ -689,6 +694,8 @@ footer {
     margin-top: 150px;
     margin-bottom: 200px;
 }
+
+/* ===== workres ===== */
 
 
 
@@ -1205,13 +1212,13 @@ footer {
 
     .work-item.item1 {
         justify-content: flex-start;
-        padding-left: 40px;
+
 
     }
 
     .work-item.item2 {
         justify-content: flex-end;
-        padding-right: 40px;
+
     }
 
     /* ===== biyousitu ===== */
@@ -1258,6 +1265,12 @@ footer {
         background: #8b3a3a;
     }
 
+
+    .work-info {
+        max-width: 840px;
+        margin: 0 auto;
+        text-align: left;
+    }
 
     .work-info div {
         display: grid;
