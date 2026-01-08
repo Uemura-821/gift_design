@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
 
         <div class="work-name">
             <span class="square"></span>
-            <p>美容室「LIFE hair design」LP型コーポレートサイト</p>
+            <p>美容室「LIFE hair design」<br class="br-biyousitu"> LP型コーポレートサイト</p>
         </div>
 
         <dl class="work-info">
@@ -98,6 +99,19 @@
         <p>©2025 portfolio tsugumi uemura</p>
     </footer>
 
+    <script>
+
+
+        $(function () {
+            $('.sp-btn').on('click', function () {
+                $('.sp-btn').toggleClass('open');
+                $('.sp-menu').fadeToggle('open')
+            });
+        });
+        // scroitop*スクロール量求められる。
+
+
+    </script>
 </body>
 
 </html>

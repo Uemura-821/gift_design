@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -51,32 +52,32 @@
         <div class="work-list">
 
             <!-- item -->
-            <div class="work-item">
+            <div class="work-item item1">
                 <img src="images/1xjpg_1.jpg" alt="美容室">
             </div>
 
-            <div class="work-item">
+            <div class="work-item item2">
                 <img src="images/1xjpg_2.jpg" alt="ワーカー">
 
             </div>
 
-            <div class="work-item">
+            <div class="work-item item1">
                 <img src="images/1xjpg_3.jpg" alt="カフェ">
             </div>
 
-            <div class="work-item">
+            <div class="work-item item2">
                 <img src="images/1xjpg_1xjpg_4.jpg" alt="アイスクリームの">
             </div>
 
-            <div class="work-item">
+            <div class="work-item item1">
                 <img src="images/1xjpg_5.jpg" alt="ハンバーガー">
             </div>
 
-            <div class="work-item">
+            <div class="work-item item2">
                 <img src="images/1xjpg_6.jpg" alt="学割">
             </div>
 
-            <div class="work-item">
+            <div class="work-item item1">
                 <img src="" alt="">
             </div>
 
@@ -90,6 +91,40 @@
     <footer class="footer2">
         <p>©2025 portfolio tsugumi uemura</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const items = document.querySelectorAll(".work-item");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-show");
+                            observer.unobserve(entry.target); // 1回だけ
+                        }
+                    });
+                },
+                {
+                    threshold: 0.2
+                }
+            );
+
+            items.forEach(item => {
+                observer.observe(item);
+            });
+        });
+
+
+        $(function () {
+            $('.sp-btn').on('click', function () {
+                $('.sp-btn').toggleClass('open');
+                $('.sp-menu').fadeToggle('open')
+            });
+        });
+        // scroitop*スクロール量求められる。
+
+    </script>
 
 </body>
 
