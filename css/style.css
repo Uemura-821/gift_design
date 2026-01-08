@@ -1186,15 +1186,6 @@ footer {
     .work-item {
         width: 100%;
         display: flex;
-    }
-
-    .work-item img {
-        width: 49%;
-        height: auto;
-    }
-
-    /* 最初の状態（非表示） */
-    .work-item {
         opacity: 0;
         transform: translateY(40px);
         transition:
@@ -1202,7 +1193,11 @@ footer {
             transform 0.8s ease;
     }
 
-    /* 表示されたとき */
+    .work-item img {
+        width: 49%;
+        height: auto;
+    }
+
     .work-item.is-show {
         opacity: 1;
         transform: translateY(0);
