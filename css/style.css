@@ -432,7 +432,7 @@ footer {
 
 .photo2 {
     box-sizing: border-box;
-    padding: 6% 7%;
+    padding: 5% 5%;
     border: solid 1px #9b0015;
     border-radius: 25%;
 }
@@ -1186,6 +1186,21 @@ footer {
 
     .photo {
         order: 1;
+    }
+
+    .photo2 {
+        box-sizing: border-box;
+        padding: 5% 5%;
+        border: solid 1px #9b0015;
+        border-radius: 25%;
+    }
+
+    .photo2 img {
+        display: block;
+        width: 41%;
+        max-width: 330px;
+        margin: 0 auto;
+        border-radius: 30px;
     }
 
     .profile-text {
