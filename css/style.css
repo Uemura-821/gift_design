@@ -430,6 +430,21 @@ footer {
     margin-top: 20%;
 }
 
+.photo2 {
+    box-sizing: border-box;
+    padding: 6% 7%;
+    border: solid 1px #9b0015;
+    border-radius: 25%;
+}
+
+.photo2 img {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    border-radius: 58px;
+}
+
 .section-sub {
     text-align: center;
     padding-top: 10px;
@@ -742,8 +757,8 @@ footer {
     position: relative;
     z-index: 3;
     position: absolute;
-    right: 20%;
-    bottom: -50%;
+    right: 1%;
+    bottom: -40%;
 
 }
 
@@ -753,11 +768,11 @@ footer {
 
 .workers_sumaho_inner {
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 50%;
     transform: translateX(-48%);
-    width: 37%;
-    height: 75%;
+    width: 36%;
+    height: 72%;
     overflow-y: scroll;
     z-index: 4;
 }
@@ -1347,8 +1362,12 @@ footer {
     }
 
 
-    .pasocon img {
+    .pasocon>img {
         width: 94%;
+    }
+
+    .workers_inner {
+        width: 72%;
     }
 
     .biyousitu_inner {
@@ -1419,5 +1438,8 @@ footer {
         margin-top: 80px;
         margin-bottom: 70px;
     }
+
+    /* ===== workres ===== */
+
 
 }
