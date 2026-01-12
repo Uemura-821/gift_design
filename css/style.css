@@ -753,7 +753,7 @@ footer {
     z-index: 3;
     position: absolute;
     right: 1%;
-    bottom: -40%;
+    bottom: -23%;
 
 }
 
@@ -764,10 +764,10 @@ footer {
 .workers_sumaho_inner {
     position: absolute;
     top: 15%;
-    left: 50%;
+    left: 49.2%;
     transform: translateX(-48%);
-    width: 36%;
-    height: 72%;
+    width: 35%;
+    height: 70%;
     overflow-y: scroll;
     z-index: 4;
 }
@@ -781,9 +781,13 @@ footer {
     align-items: center;
     justify-content: flex-start;
     gap: 12px;
-    margin: 100px auto 50px;
+    margin: 200px auto 50px;
     max-width: 840px;
     font-size: 20px;
+}
+
+.work-name br {
+    display: none;
 }
 
 
@@ -1449,6 +1453,9 @@ footer {
     }
 
     /* ===== workres ===== */
+    .work-name br {
+        display: block;
 
+    }
 
 }
