@@ -722,10 +722,9 @@ footer {
 .biyousitu_inner {
     position: absolute;
     top: 4%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 79%;
-    height: 88%;
+    left: 11%;
+    width: 77%;
+    height: 86%;
     overflow-y: scroll;
     z-index: 2;
 }
@@ -1449,17 +1448,11 @@ footer {
     }
 
 
-    .pasocon>img {
-        width: 94%;
-    }
-
-    .workers_inner {
-        width: 72%;
-    }
 
     .biyousitu_inner {
         width: 72%;
         height: 86%;
+        left: 14%;
     }
 
     .biyousitu_inner img {
@@ -1532,4 +1525,11 @@ footer {
 
     }
 
+    .pasocon>img {
+        width: 94%;
+    }
+
+    .workers_inner {
+        width: 72%;
+    }
 }

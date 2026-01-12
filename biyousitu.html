@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -48,20 +49,20 @@
     <section id="work-biyousitu">
 
         <h2>WORK</h2>
-        <div class="pasocon">
+        <div class="pasocon inview fadeUp">
             <img src="images/1xpng_pasokon.png" alt="パソコン">
 
-            <div class="biyousitu_inner">
+            <div class="biyousitu_inner inview fadeUp">
                 <img src="./images/biyousitu.jpg" alt="美容室">
             </div>
         </div>
 
-        <div class="work-name">
+        <div class="work-name inview fadeUp delay2">
             <span class="square"></span>
             <p>美容室「LIFE hair design」<br class="br-biyousitu"> <span> LP型コーポレートサイト</span></p>
         </div>
 
-        <dl class="work-info">
+        <dl class="work-info inview fadeUp delay3">
             <div>
                 <dt>カテゴリ</dt>
                 <dd>ランディングページ</dd>
@@ -117,6 +118,13 @@
         // scroitop*スクロール量求められる。
 
 
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
     </script>
 </body>
 

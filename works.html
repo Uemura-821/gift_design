@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
     </div>
 
     <section id="work">
-        <h2 class="section-title">WORK</h2>
+        <h2 class="section-title  inview fadeUp delay1">WORK</h2>
 
         <div class="work-list">
 
@@ -125,7 +126,13 @@
             });
         });
         // scroitop*スクロール量求められる。
-
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
     </script>
 
 </body>

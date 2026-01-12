@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="icon" href="./favicon.io/favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.io/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="icon">
+            <img src="images/svg_aikonn.svg" alt="アイコン">
+        </div>
+
+
+        <nav class="side-menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="works.html">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="sp-btn">
+            <span></span>
+        </div>
+
+        <nav class="sp-menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="works.html">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="work-biyousitu">
+
+        <h2>WORK</h2>
+        <div class="pasocon inview fadeUp">
+            <img src="images/1xpng_pasokon.png" alt="パソコン">
+
+            <div class="biyousitu_inner inview fadeUp">
+                <img src="./images/biyousitu.jpg" alt="美容室">
+            </div>
+        </div>
+
+        <div class="work-name inview fadeUp delay2">
+            <span class="square"></span>
+            <p>美容室「LIFE hair design」<br class="br-biyousitu"> <span> LP型コーポレートサイト</span></p>
+        </div>
+
+        <dl class="work-info inview fadeUp delay3">
+            <div>
+                <dt>カテゴリ</dt>
+                <dd>ランディングページ</dd>
+            </div>
+
+            <div>
+                <dt>担当範囲</dt>
+                <dd>デザイン</dd>
+            </div>
+
+            <div>
+                <dt>使用ツール</dt>
+                <dd>Adobe Illustrator</dd>
+            </div>
+
+            <div>
+                <dt>制作期間</dt>
+                <dd>2週間程度</dd>
+            </div>
+
+            <div>
+                <dt>制作ポイント</dt>
+                <dd>10周年を機にWEBサイトをリニューアル。<br>
+                    10～50代女性をターゲットにSNSから顧客獲得を目指す。<br>
+                    コーポレートカラーのピンクを基調とし、<br>
+                    余白を持たせ、全体的に<br>
+                    シンプルにおしゃれに、お店の雰囲気が伝わるデザインに仕上げました。</dd>
+            </div>
+        </dl>
+
+        <div class="otoiawase-btn_info">
+            <a href="index.html #contact" class="otoiawase">お問い合わせはこちら</a>
+        </div>
+
+    </section>
+    <a class="pagetop" href="#" aria-label="ページの先頭へ戻る">
+        <span class="pagetop_mark" aria-hidden="true"></span>
+        <span class="pagetop_text">PAGE TOP</span>
+    </a>
+    <footer class="footer2">
+        <p>©2025 portfolio tsugumi uemura</p>
+    </footer>
+
+    <script>
+
+
+        $(function () {
+            $('.sp-btn').on('click', function () {
+                $('.sp-btn').toggleClass('open');
+                $('.sp-menu').fadeToggle('open')
+            });
+        });
+        // scroitop*スクロール量求められる。
+
+
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

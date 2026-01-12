@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -48,14 +49,14 @@
     <section id="work-workers">
 
         <h2>WORK</h2>
-        <div class="pasocon">
+        <div class="pasocon  inview fadeUp">
             <img src="images/1xpng_pasokon.png" alt="パソコン">
 
             <div class="workers_inner">
                 <img src="images/workers_pc.jpg" alt="workersパソコン">
             </div>
 
-            <div class="sumaho">
+            <div class="sumaho  inview fadeUp">
                 <img src="images/1xjpg_sumaho.png" alt="スマホ">
 
                 <div class="workers_sumaho_inner">
@@ -65,12 +66,12 @@
             </div>
         </div>
 
-        <div class="work-name">
+        <div class="work-name inview fadeUp delay1">
             <span class="square"></span>
             <p>コワーキングスペース <br>「WORKERS」LP型コーポレートサイト</p>
         </div>
 
-        <dl class="work-info">
+        <dl class="work-info inview fadeUp delay2">
             <div>
                 <dt>カテゴリ</dt>
                 <dd>ランディングページ</dd>
@@ -125,7 +126,13 @@
         });
         // scroitop*スクロール量求められる。
 
-
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
     </script>
 </body>
 

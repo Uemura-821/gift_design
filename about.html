@@ -49,22 +49,22 @@
 
     <section id="about">
         <h2 class="section-title inview fadeUp">ABOUT</h2>
-        <p class="section-sub">私について</p>
+        <p class="section-sub inview fadeUp delay1">私について</p>
 
-        <div class="about-profile  inview fadeUp delay1">
+        <div class="about-profile inview fadeUp delay1">
 
-            <div class="photo">
+            <div class="photo inview fadeUp delay1">
                 <img src="images/1xjpg_about.jpg" alt="私の写真">
             </div>
 
-            <div class="profile-text">
+            <div class="profile-text inview fadeUp delay1">
                 <p class="profile-text1"><strong>uemura tsugumi / 上村亜美</strong></p>
                 <p class="profile-text2">2001年8月21日生まれ</p>
                 <p>京都府在住</p>
             </div>
         </div>
 
-        <div class="about-message">
+        <div class="about-message  inview fadeUp delay2">
             <p>
                 元々は看護師として働いていました。<br>
                 昔から、1から何かを作ったり、<br>
@@ -85,9 +85,9 @@
     </section>
 
     <section id="skill">
-        <h2 class="section-title">SKILL</h2>
+        <h2 class="section-title  inview fadeUp delay3">SKILL</h2>
 
-        <div class="skill-list">
+        <div class="skill-list  inview fadeUp delay3">
             <div class="skill-item">
                 <img src="images/svg_skill1.svg" alt="デザインアイコン">
                 <h3>design</h3>
@@ -131,6 +131,13 @@
         });
         // scroitop*スクロール量求められる。
 
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
 
     </script>
 </body>
