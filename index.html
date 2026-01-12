@@ -59,8 +59,10 @@
 
     <main>
         <div class="top">
-            <p class="main">Evry design is <br class="br-sp"> a little gift.
-            </p>
+            <div class="inview fadeIn_right">
+                <p class="main">Evry design is <br class="br-sp"> a little gift.
+                </p>
+            </div>
             <p class="sub">
                 作品1つ1つに贈り物をお届けするような<br>
                 気持ち、やさしさ、こだわり、<br>
@@ -246,6 +248,7 @@
 
         setCenterLineActive();
 
+        // リボン
         $(function () {
             $(document).on("scroll", function () {
                 if ($(this).scrollTop() > 80) {
@@ -257,6 +260,7 @@
             })
         });
 
+        // ハンバーガーメニュー
         $(function () {
             $('.sp-btn').on('click', function () {
                 $('.sp-btn').toggleClass('open');
@@ -265,7 +269,13 @@
         });
         // scroitop*スクロール量求められる。
 
-
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
     </script>
 </body>
 

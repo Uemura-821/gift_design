@@ -93,6 +93,17 @@ body {
     display: none;
 }
 
+.fadeIn_right {
+    opacity: 0;
+    transform: translate(50%, 0);
+    transition: 2s;
+}
+
+.fadeIn_right.is-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
 .sub {
     font-size: 23px;
     line-height: 1.7;
@@ -136,7 +147,7 @@ h2 {
 
 .photo {
     box-sizing: border-box;
-    padding: 16% 15%;
+    padding: 75px 70px;
     border: solid 1px #9b0015;
     border-radius: 25%;
 }
@@ -430,21 +441,6 @@ footer {
     margin-top: 20%;
 }
 
-.photo2 {
-    box-sizing: border-box;
-    padding: 5% 5%;
-    border: solid 1px #9b0015;
-    border-radius: 25%;
-}
-
-.photo2 img {
-    display: block;
-    width: 100%;
-    max-width: 330px;
-    margin: 0 auto;
-    border-radius: 58px;
-}
-
 .section-sub {
     text-align: center;
     padding-top: 10px;
@@ -555,7 +551,6 @@ footer {
 .footer2 {
     background: #e8e4dc;
 }
-
 
 
 
@@ -752,7 +747,7 @@ footer {
 
 .sumaho {
     max-width: 400px;
-    width: 100%;
+    width: 50%;
     display: block;
     position: relative;
     z-index: 3;
@@ -1337,7 +1332,7 @@ footer {
 
     .work-item {
         width: 100%;
-        display: flex;
+        display: block;
         opacity: 0;
         transform: translateY(40px);
         transition:
@@ -1348,6 +1343,7 @@ footer {
     .work-item img {
         width: 49%;
         height: auto;
+        display: block;
     }
 
     .work-item.is-show {
@@ -1355,14 +1351,12 @@ footer {
         transform: translateY(0);
     }
 
-    .work-item.item1 {
-        justify-content: flex-start;
-
-
+    .work-item.item1 img {
+        margin-right: auto;
     }
 
-    .work-item.item2 {
-        justify-content: flex-end;
+    .work-item.item2 img {
+        margin-left: auto;
 
     }
 
