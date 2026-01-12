@@ -2,6 +2,7 @@
 
 body {
     background: #e8e4dc;
+    overflow-x: hidden;
 }
 
 .ribbon {
@@ -18,6 +19,38 @@ body {
     width: 100%;
 }
 
+.ribbon {
+    animation: floatRibbon 6s ease-in-out infinite;
+}
+
+/* フェード・表示用（親） */
+.ribbon {
+    opacity: 0;
+    transition: 2s;
+}
+
+.ribbon.is-show {
+    opacity: 1;
+}
+
+.ribbon-inner {
+    animation: floatRibbon 6s ease-in-out infinite;
+}
+
+/* 浮遊*/
+@keyframes floatRibbon {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .sidebar {
     position: fixed;
@@ -74,7 +107,15 @@ body {
     width: 53%;
     margin-top: 40%;
     margin-left: 30%;
+}
 
+.fadeIn {
+    opacity: 0;
+    transition: 2s;
+}
+
+.fadeIn.is-show {
+    opacity: 1;
 }
 
 .top {
@@ -104,6 +145,14 @@ body {
     opacity: 1;
 }
 
+.delay1 {
+    transition-delay: 1.5s;
+}
+
+.delay2 {
+    transition-delay: 3.0s;
+}
+
 .sub {
     font-size: 23px;
     line-height: 1.7;
@@ -128,6 +177,17 @@ h2 {
     padding-top: 120px;
     padding-bottom: 105px;
     margin: 0 auto;
+}
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1.5s ease;
+}
+
+.fadeUp.is-show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about-wrap {
@@ -184,11 +244,28 @@ h2 {
     line-height: 1.8;
     color: #9b0015;
     position: absolute;
-    left: 100%;
+    left: 110%;
     top: 38%;
     transform: translate(50px);
     width: 52%;
 
+}
+
+
+.delay1 {
+    transition-delay: 0s;
+}
+
+.delay2 {
+    transition-delay: 0.6s;
+}
+
+.delay3 {
+    transition-delay: 0.9s;
+}
+
+.delay4 {
+    transition-delay: 1.0s;
 }
 
 .view-btn {
@@ -474,17 +551,13 @@ footer {
     max-width: 745px;
     margin: 0 auto;
     padding-top: 200px;
+    padding-bottom: 120px;
     color: #666666;
     font-size: 26px;
     line-height: 1.7;
 }
 
-.footer2
-
 /* ===== SKILL ===== */
-.skill {
-    padding-top: 120px;
-}
 
 .skill-list {
     display: flex;
@@ -1028,7 +1101,7 @@ footer {
         width: 196px;
         position: static;
         order: 3;
-        padding-left: 16%;
+        padding-left: 40%;
         margin-top: -105px;
     }
 
@@ -1245,6 +1318,7 @@ footer {
     .about-message {
         max-width: 345px;
         padding-top: 75px;
+        padding-bottom: 60px;
         font-size: 12px;
         line-height: 1.8;
         text-align: center;

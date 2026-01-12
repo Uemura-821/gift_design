@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT</title>
+    <link rel="icon" href="./favicon.io/favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.io/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -45,10 +48,10 @@
     </div>
 
     <section id="about">
-        <h2 class="section-title">ABOUT</h2>
+        <h2 class="section-title inview fadeUp">ABOUT</h2>
         <p class="section-sub">私について</p>
 
-        <div class="about-profile">
+        <div class="about-profile  inview fadeUp delay1">
 
             <div class="photo">
                 <img src="images/1xjpg_about.jpg" alt="私の写真">
@@ -81,7 +84,7 @@
         </div>
     </section>
 
-    <section class="skill">
+    <section id="skill">
         <h2 class="section-title">SKILL</h2>
 
         <div class="skill-list">

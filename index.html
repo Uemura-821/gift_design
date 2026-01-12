@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
 </head>
 
 <body>
     <div class="ribbon">
-        <img src="images/svg_ribonn.svg" alt="リボン">
+        <img src="images/svg_ribonn.svg" class="ribbon-inner" alt="リボン">
     </div>
 
     <div class="sidebar">
@@ -54,45 +55,47 @@
 
 
 
-    <div class="gift">
+    <div class="gift inview fadeIn">
         <img src="images/svg_GIFTDESISN.svg" alt="GIFT DESIGN">
     </div>
 
 
     <main>
         <div class="top">
-            <div class="inview fadeIn_right">
+            <div class="inview fadeIn_right delay1">
                 <p class="main">Evry design is <br class="br-sp"> a little gift.
                 </p>
             </div>
-            <p class="sub">
-                作品1つ1つに贈り物をお届けするような<br>
-                気持ち、やさしさ、こだわり、<br>
-                のこもったデザインを。<br>
-                giftをもらった時、開けるときのドキドキ、<br>
-                わくわく感は誰でも嬉しくて胸が高鳴る。<br>
-                リボンをほどいて一目見た瞬間の<br>
-                胸の高鳴りを大切にする。そんなデザインを<br>
-                お客様と一緒に作りたいです。
-            </p>
+            <div class="inview fadeIn_right delay2">
+                <p class="sub">
+                    作品1つ1つに贈り物をお届けするような<br>
+                    気持ち、やさしさ、こだわり、<br>
+                    のこもったデザインを。<br>
+                    giftをもらった時、開けるときのドキドキ、<br>
+                    わくわく感は誰でも嬉しくて胸が高鳴る。<br>
+                    リボンをほどいて一目見た瞬間の<br>
+                    胸の高鳴りを大切にする。そんなデザインを<br>
+                    お客様と一緒に作りたいです。
+                </p>
+            </div>
         </div>
     </main>
     <section id="ABOUT">
-        <h2 class="ABOUT">ABOUT</h2>
+        <h2 class="ABOUT inview fadeUp">ABOUT</h2>
         <div class="about-wrap">
             <div class="about1">
-                <p class="uemura">uemura <br>
+                <p class="uemura inview fadeUp delay1">uemura <br>
                     tsugumi</p>
-                <p class="name">上村亜美</p>
-                <p class="kyoto">....kyoto</p>
-                <p class="birthday">....20001.08.21</p>
+                <p class="name inview fadeUp delay1">上村亜美</p>
+                <p class="kyoto inview fadeUp delay2">....kyoto</p>
+                <p class="birthday inview fadeUp delay2">....20001.08.21</p>
             </div>
 
             <div class="photo">
                 <img src="images/1xjpg_about.jpg" alt="私の写真">
             </div>
 
-            <p class="syoukai">
+            <p class="syoukai inview fadeUp delay3">
                 京都生まれ京都育ちです。<br>
                 好きな食べ物は<br>
                 苺で期間限定の苺には<br>
@@ -110,7 +113,7 @@
 
     <section id="WORK">
 
-        <h2 class="WORK">WORK</h2>
+        <h2 class="WORK inview fadeUp delay4">WORK</h2>
 
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -150,7 +153,7 @@
 
     <section id="contact">
 
-        <h2>contact</h2>
+        <h2 class="inview fadeUp delay4">contact</h2>
         <p class="contact-sub">-お問い合わせ-</p>
 
         <form target="hidden_iframe" onsubmit="submitted=true;"
@@ -270,6 +273,14 @@
             });
         });
         // scroitop*スクロール量求められる。
+
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
 
         $(function () {
             $(".inview").on("inview", function (event, isInView) {
