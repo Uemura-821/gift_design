@@ -14,6 +14,7 @@ body {
     z-index: 1;
 }
 
+
 .ribbon img {
     display: block;
     width: 100%;
@@ -210,6 +211,7 @@ h2 {
     padding: 75px 70px;
     border: solid 1px #9b0015;
     border-radius: 25%;
+
 }
 
 .photo img {
@@ -218,6 +220,19 @@ h2 {
     max-width: 330px;
     margin: 0 auto;
     border-radius: 58px;
+}
+
+
+@keyframes photoReveal {
+
+    from {
+        --p: 0%;
+    }
+
+    to {
+        --p: 100%;
+    }
+
 }
 
 .uemura {
@@ -265,7 +280,11 @@ h2 {
 }
 
 .delay4 {
-    transition-delay: 1.0s;
+    transition-delay: 1.3s;
+}
+
+.delay4 {
+    transition-delay: 1.6s;
 }
 
 .view-btn {
@@ -273,6 +292,22 @@ h2 {
     justify-content: flex-end;
     padding: 100px 230px 115px 0;
     cursor: pointer;
+}
+
+.view-more {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.view-more:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 10px 20px rgba(155, 0, 21, 0.25);
+}
+
+.view-more:active {
+    transform: translateY(0);
 }
 
 .view-more {
@@ -317,6 +352,9 @@ h2 {
     width: 100%;
     transition: scale 0.5s;
     scale: 0.8;
+    transition:
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.6s ease;
 }
 
 .swiper-slide img {
@@ -326,6 +364,9 @@ h2 {
 .swiper-slide-active {
     scale: 1;
     z-index: 2;
+    transform: scale(1.05);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.15);
 }
 
 .triangle {
@@ -899,6 +940,50 @@ footer {
 .otoiawase-btn_info {
     margin-top: 150px;
     margin-bottom: 200px;
+}
+
+/* ===== gakuwari ===== */
+.sumaho_viwe {
+    max-width: 1000px;
+    width: 37%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.sumaho_viwe img {
+    width: 100%;
+}
+
+/* ===== gakuwari ===== */
+/* ===== gakuwari ===== */
+.sumaho_viwe2 {
+    width: 30%;
+    display: block;
+}
+
+.sumaho_viwe2 img {
+    width: 100%;
+}
+
+.work_visual {
+    display: flex;
+    justify-content: center;
+
+    gap: 60px;
+    /* スマホ同士の間隔 */
+    margin: 80px auto 120px;
+}
+
+.sumaho_vive img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+}
+
+.sumaho_vive:first-child {
+    transform: translateY(40px);
 }
 
 @media screen and (max-width: 767px) {
@@ -1532,4 +1617,15 @@ footer {
     .workers_inner {
         width: 72%;
     }
+
+    /* ===== gakuwari ===== */
+    .pasocon {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
 }
